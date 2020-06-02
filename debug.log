@@ -1,0 +1,7 @@
+[1230/183118.504:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
+[0113/204836.711:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0520/204104.426:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0520/205104.412:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0520/205104.413:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0520/205604.458:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0520/211104.656:ERROR:crash_report_database_win.cc(469)] failed to stat report

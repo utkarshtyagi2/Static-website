@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<title>Login and Regestration form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="login-page">
+<div class="form">
+   <form class="register-form">
+   <input type="text" placeholder="user name"/>
+   <input type="text" placeholder="password"/>
+   <input type="text" placeholder="roll no"/>
+   <input type="text" placeholder="email-id"/>
+   <input type="text" placeholder="course"/>
+<button>Create</button>
+<p class="message">Already Registerd? <a href="#">Login</a></p>
+</form>
+
+<form onsubmit="return validate();" class="login-form" id="login" action="C:\Users\admin\Desktop\website\web.html">
+
+<input id="uname" type="text" placeholder="user name"/>
+<input id ="pass"type="password" placeholder="password"/>
+<button type="submit">Login</button>
+<p class="message">Not Registerd? <a href="#">Register</a>
+</p>
+</form>
+</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'>
+</script>
+<script>
+   function validate()
+   {
+      var username=document.getElementById("uname");
+      var password=document.getElementById("pass");
+
+      if(username.value.trim()=="" || password.value.trim()=="")
+      {
+         alert("no blank value is allowed");
+         return false;
+      }
+      else if(password.value.trim().length<5)
+      {
+         alert("password is too short");
+         return false;
+      }
+      else
+      {
+        return true;
+      }
+   }
+</script>
+<script>
+$('.message a').click(function(){
+$('form').animate({height: "toggle", opacity: "toggle"},"slow");
+});
+
+</script>
+
+</body>
+</html>
